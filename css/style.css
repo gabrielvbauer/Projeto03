@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 90vh;
+    min-height: 800px;
+    padding: 40px 2%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imagens/capa.png);
+}
+
+header nav {
+    float: right;
+    transition: 1s;
+}
+
+header nav.mobile-menu {
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../imagens/menu.png);
+    background-size: 100% 100%;
+}
+
+header nav.mobile-menu ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 30%;
+    background-image: linear-gradient(to bottom right, #5a348a, #472572);
+    list-style-type: none;
+    text-align: center;
+}
+
+
+/*
+header nav.mobile-menu:hover ul {
+    opacity: 1;
+}
+*/
+
+header nav.mobile-menu ul li {
+    padding: 8px 0;
+    border: 1px solid black;
+}
+
+header nav.mobile-menu ul li:hover {
+    background-color: #6f4c9c;
+}
+
+header nav.mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav.desktop-menu ul {
+    list-style-type: none;
+    transition: 1s;
+}
+
+header nav.desktop-menu li {
+    float: left;
+    padding: 0 20px;
+}
+
+header nav.desktop-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav.desktop-menu li a:hover {
+    color: #9b74bd;
+    transition: .5s;
+}
+
+header .logo {
+    position: relative;
+    top: -5px;
+    float: left;
+    width: 160px;
+    height: 40px;
+    background-image: url(../imagens/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+header .chamada-1 {
+    float: right;
+    margin: 140px 80px;
+    max-width: 550px;
+    transition: 1s;
+}
+
+header .chamada-1 h2 {
+    font-size: 45px;
+    font-weight: 100;
+    color: white;
+}
+
+header .chamada-1 p {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+}
+
+
+/************/
+
+
+/* SECTION 1*/
+
+section.sessao-1 {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to left, #341161, #472572);
+    padding: 0 2%;
+    transition: 1s;
+}
+
+section.sessao-1 .container {
+    max-width: 1000px;
+    height: calc(100% + 30px);
+}
+
+.texto-sessao-1 {
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 50px;
+    margin-top: 80px;
+    padding-left: 80px;
+    color: white;
+}
+
+.texto-sessao-1 h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.texto-sessao-1 p {
+    font-size: 15x;
+    margin-top: 20px;
+}
+
+.texto-sessao-1 ul {
+    list-style-position: outside;
+    padding-left: 17px;
+    font-size: 15px;
+}
+
+.texto-sessao-1 ul li {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn1-texto {
+    width: 165px;
+    height: 44px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #FF703D;
+    transition: 1s;
+}
+
+.btn1-texto:hover {
+    color: #FF703D;
+    background-color: white;
+    transition: 1s;
+    box-shadow: 0 5px 10px rgba(32, 32, 32, 0.5);
+}
+
+.device-sessao-1 {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    top: -30px;
+    background-image: url(../imagens/device.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*****************/
+
+
+/* SECTION 2*/
+
+section.sessao-2 .container {
+    max-width: 1000px;
+}
+
+section.sessao-2 {
+    margin-top: 85px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    background-color: white;
+    transition: 1s;
+}
+
+section.sessao-2 h2 {
+    color: #472663;
+    font-weight: 300;
+}
+
+section.sessao-2 p {
+    max-width: 900px;
+    margin-top: 30px;
+    line-height: 35px;
+    display: inline-block;
+    color: #472663;
+}
+
+section.sessao-2 img {
+    margin-top: -30px;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    box-shadow: 0 0 50px 1px black;
+}
+
+
+/************/
+
+
+/* SESSAO 3 */
+
+.sessao-3 {
+    width: 100%;
+    transition: 1s;
+}
+
+.wrapper-left {
+    max-width: 500px;
+    float: right;
+    padding: 5px 30px;
+}
+
+.sessao-3 .left-box {
+    width: 50%;
+    float: left;
+    padding: 140px 0 90px 0;
+    color: white;
+    background-color: #835FA7;
+}
+
+.left-box h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.left-box p {
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+.sessao-3 .right-box {
+    width: 50%;
+    float: right;
+    max-height: 500px;
+    padding: 140px 0 90px 0;
+    background-color: white;
+}
+
+.scrollEquipe {
+    max-width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.scroll-wrapper {
+    width: 100%;
+}
+
+.sobre-autor {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.titulo-autor {
+    float: left;
+    width: 100%;
+}
+
+.wrapper-titulo-autor {
+    float: left;
+}
+
+.titulo-autor p {
+    font-weight: 300;
+    font-size: 13px;
+    font-style: italic;
+    color: #232323;
+}
+
+.titulo-autor h2 {
+    font-weight: 400;
+    font-size: 21px;
+    padding-right: 20px;
+    color: #232323;
+}
+
+.titulo-autor .img-autor {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    position: relative;
+    top: -4px;
+    border-radius: 20px;
+    background-image: url(../imagens/author.jpg);
+    background-size: 100% 100%;
+}
+
+.sobre-autor .texto-autor {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sobre-autor .texto-autor p {
+    font-size: 15px;
+    line-height: 35px;
+    color: #232323;
+}
+
+.slider-bullets {
+    width: 100%;
+    float: left;
+    padding-left: 39px;
+    margin-top: 12px;
+}
+
+.slider-bullets span {
+    width: 16px;
+    height: 16px;
+    float: left;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+
+/************/
+
+
+/* SESSAO 4 */
+
+.sessao-4 {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #472563;
+    transition: 1s;
+}
+
+.form {
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 50px;
+}
+
+.form h2 {
+    font-size: 23px;
+    font-weight: 300px;
+}
+
+.form p {
+    font-size: 15px;
+    font-weight: 300px;
+    max-width: 400px;
+    padding-right: 15px;
+    margin-top: 5px;
+}
+
+.form form {
+    margin: 15px 0 0 0;
+}
+
+.form form input[type=text],
+input[type=email] {
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 15px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 8px;
+    outline: none;
+}
+
+.form form textarea {
+    width: 90%;
+    height: 160px;
+    max-width: 480px;
+    margin-top: 8px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    outline: none;
+}
+
+.form form input[type=submit] {
+    width: 110px;
+    height: 44px;
+    margin-top: 30px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #FF703D;
+}
+
+.form form input[type=submit]:hover {
+    color: #FF703D;
+    background-color: white;
+    transition: 1s;
+    box-shadow: 0 5px 10px rgba(32, 32, 32, 0.5);
+}
+
+.map-wrapper {
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.map-wrapper h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.map-wrapper2 {
+    width: 100%;
+    padding-top: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.map-wrapper3 {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ccc;
+    background-color: white;
+}
+
+
+/************/
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px 2%;
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    transition: 1s;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+    padding: 0 20px;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+    padding: 0 20px;
+}
+
+
+/************/
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 830px) {
+    header .chamada-1 {
+        margin: 170px 0;
+        width: 100%;
+        max-width: none;
+        float: none;
+        text-align: center;
+    }
+    header .chamada-1 h2 {
+        font-size: 30px;
+        padding: 0 0px;
+        font-weight: 100;
+        color: white;
+    }
+    header .chamada-1 p {
+        font-size: 12px;
+        font-weight: normal;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+    header nav.desktop-menu {
+        display: none;
+    }
+    header nav.mobile-menu {
+        display: block;
+    }
+    section.sessao-1 {
+        height: auto;
+        padding: 40px;
+        text-align: center;
+    }
+    .texto-sessao-1 {
+        width: 100%;
+        margin-top: 0;
+        position: static;
+        float: none;
+        display: inline-block;
+        padding: 0;
+    }
+    .texto-sessao-1 ul {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .texto-sessao-1 ul li {
+        float: none;
+        text-align: left;
+    }
+    .btn1-texto {
+        display: inline-block;
+    }
+    .device-sessao-1 {
+        display: none;
+    }
+    .sessao-2 {
+        padding: 40px 2%;
+    }
+    section.sessao-4 .container {
+        text-align: center;
+    }
+    .form {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+    .form p {
+        display: inline-block;
+        float: none;
+    }
+    .map-wrapper {
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0;
+    }
+    .map-wrapper2 {
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .map-wrapper3 {
+        width: 80%;
+        padding-top: 80%;
+        max-width: none;
+        position: relative;
+        margin-top: 15px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sessao-3 .left-box {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .sessao-3 .right-box {
+        width: 100%;
+        padding: 40px 0
+    }
+    section.sessao-2 img {
+        top: 60px;
+        margin-top: 5px;
+    }
+    footer {
+        text-align: center;
+    }
+    footer p:nth-of-type(1) {
+        float: none;
+        padding: 0 20px;
+    }
+    footer p:nth-of-type(2) {
+        float: none;
+        padding: 0 20px;
+        margin-top: 8px;
+    }
+}
